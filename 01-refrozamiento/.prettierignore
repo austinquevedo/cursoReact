@@ -1,0 +1,22 @@
+# Ignorar dependencias
+node_modules
+
+# Ignorar compilados y build
+dist
+build
+out
+coverage
+
+# Archivos de lock (npm/yarn/pnpm)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos de configuración de entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de caché o logs
+*.log
+.cache
