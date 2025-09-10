@@ -1,4 +1,12 @@
-const person = {
+interface Hero {
+  id: number;
+  name: string;
+  age: number;
+  address: string;
+  key: string;
+}
+
+const person: Hero = {
   id: 12,
   name: 'Juan',
   age: 30,
@@ -9,14 +17,6 @@ const person = {
 const { id, name, age } = person;
 
 // console.log({ name, age, key });
-
-interface Hero {
-  id: number;
-  name: string;
-  age: number;
-  address: string;
-  key: string;
-}
 
 const useContext = ({ id, name, age, key }: Hero) => {
   return {
@@ -32,4 +32,4 @@ console.log(context.user.name);
 
 console.log(context);
 
-const { id, age, name } = person;
+console.log({ id }, { name }, { age });
