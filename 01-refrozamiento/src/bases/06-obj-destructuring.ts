@@ -10,11 +10,12 @@ const person: Hero = {
   id: 12,
   name: 'Juan',
   age: 30,
-  key: 'Iroman',
+  key: 'Iroman12',
   address: '123 Hero Street',
 };
 
-const { id, name, age } = person;
+//Esto es un ejemplo de destructuring
+const { name: heroName, age, address } = person;
 
 // console.log({ name, age, key });
 
@@ -26,10 +27,10 @@ const useContext = ({ id, name, age, key }: Hero) => {
   };
 };
 
-const context = useContext(person);
+const {
+  keyId,
+  id,
+  user: { name },
+} = useContext(person);
 
-console.log(context.user.name);
-
-console.log(context);
-
-console.log({ id }, { name }, { age });
+console.log({ keyId, id, name });
