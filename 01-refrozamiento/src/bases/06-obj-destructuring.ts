@@ -15,7 +15,7 @@ const person: Hero = {
 };
 
 //Esto es un ejemplo de destructuring
-const { name: heroName, age, address } = person;
+// const { name: heroName, age, address } = person;
 
 // console.log({ name, age, key });
 
