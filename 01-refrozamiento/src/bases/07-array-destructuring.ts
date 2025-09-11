@@ -1,19 +1,3 @@
-interface Hero {
-  id: number;
-  name: string;
-  age: number;
-  address: string;
-  key: string;
-}
-
-const person: Hero = {
-  id: 12,
-  name: 'Juan',
-  age: 30,
-  key: 'Iroman12',
-  address: '123 Hero Street',
-};
-
 const charactersName = ['Goku', 'Vegeta', 'Trunks'];
 
 const [, , p3] = charactersName;
