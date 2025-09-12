@@ -1,5 +1,6 @@
 const charactersName = ['Goku', 'Vegeta', 'Trunks'];
 
+//captura el ultimo elemento del array
 const [, , p3] = charactersName;
 
 console.log({ p3 });
@@ -12,6 +13,8 @@ const [letters, numbers] = returnArrayFn();
 
 console.log(numbers + 11);
 console.log({ letters, numbers });
+
+//funcion que recibe un string y retorna un array con el string y una funcion
 
 const useState = (name: string) => {
   return [
