@@ -25,6 +25,8 @@ const useState = (name: string) => {
   ] as const;
 };
 
+console.log('Estas son pruebas en la branch');
+
 const [name, setName] = useState('Goku');
 console.log(name); // Goku
 setName('Vegeta'); // Imprime "Vegeta"
