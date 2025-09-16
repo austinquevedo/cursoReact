@@ -16,3 +16,6 @@ console.log({ containLetterQ, diceNumber, fullName });
 const datos ='casa'
 
 console.log(datos)
+
+const numbers: number[] = [1, 2, 3, 4, 5];
+console.log(numbers);
