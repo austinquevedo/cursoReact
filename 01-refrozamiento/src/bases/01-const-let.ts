@@ -11,3 +11,8 @@ const fullName = `${firstName} ${lastName}`;
 const containLetterQ = fullName.includes('Q', 0);
 
 console.log({ containLetterQ, diceNumber, fullName });
+
+
+const datos ='casa'
+
+console.log(datos)
