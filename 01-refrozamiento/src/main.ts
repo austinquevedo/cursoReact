@@ -6,10 +6,16 @@ import './style.css';
 // import './bases/05-functions';
 // import './bases/06-obj-destructuring';
 // import './bases/07-array-destructuring';
-import './data/heroes.data';
+// import './data/heroes.data';
+// import './bases/08-imp-exp';
+// import { Owner } from './data/heroes.data';
+// import { getHeroesByOwner } from './bases/08-imp-exp';
+import './bases/09-promesas';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1>Hola Mundo!!</h1>
   </div>
 `;
+
+// console.log(getHeroesByOwner(Owner.DC));
