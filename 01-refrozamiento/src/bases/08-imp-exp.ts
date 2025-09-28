@@ -20,5 +20,7 @@ export const getHeroesByOwner = (owner: Owner): Hero[] => {
   // });
   const resHeroes: Hero[] = heroes.filter((hero) => hero.owner === owner);
 
+  console.log(getHeroByID(3));
+
   return resHeroes;
 };

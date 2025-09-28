@@ -2,7 +2,7 @@ const myPromise = new Promise<number>((resolve, reject) => {
   setTimeout(() => {
     // resolve(100);
     reject('200');
-  }, 2000);
+  }, 2000); // esto indica que se va a ejecutar en 2 segundos
 });
 
 myPromise
