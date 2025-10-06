@@ -12,7 +12,8 @@ import './style.css';
 // import { getHeroesByOwner } from './bases/08-imp-exp';
 // import './bases/09-promesas';
 // import './bases/10-fetch-api';
-import './bases/pruebas';
+import './bases/11-async-await';
+// import './bases/pruebas';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
