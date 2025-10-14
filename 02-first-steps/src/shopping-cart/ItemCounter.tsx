@@ -1,19 +1,20 @@
 // se puede escribir rafc para crear este snippet
-export const ItemCounter = () => {
-  return(
-    <section 
-        style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 10,
-            marginBottom: 10,
-        }}>
-        <span style={{
-            width: 150,
-        }}>Nintendo switch 2</span>    
-        <button>+1</button>
-        <span>10</span>
-        <button>-1</button>
+
+interface Props {
+  name: string;
+  quantity: number | undefined; // ? significa que es opcional
+}
+
+
+export const ItemCounter = ({ name, quantity }: Props) => {
+  console.log('ItemCounter prop name:', name);
+  return (
+    <section>
+      <span> {name} </span>
+      <button>+1</button>
+      <span>{quantity}</span>
+      <button>-1</button>
     </section>
   );
+
 }
