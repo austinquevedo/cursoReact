@@ -1,0 +1,111 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 12px 16px;
+  margin: 12px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(40, 20, 139, 0.08);
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Estado activo */
+.active {
+  background-color: #e3f7e1;
+  border-color: #4caf50;
+}
+
+/* ✅ Estado inactivo */
+.inactive {
+  background: linear-gradient(145deg, #fff5f3, #fbe9e7);
+  border: 1px solid #ff8a65;
+  border-radius: 12px;
+  opacity: 0.9;
+  box-shadow: 0 2px 8px rgba(255, 112, 67, 0.2);
+  color: #d84315;
+  transform: scale(0.98);
+}
+
+/* ✅ Estilo del nombre */
+.productName {
+  flex: 1;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ✅ Estilo del checkbox */
+.checkInput {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1a73e8;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkInput:checked {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+}
+
+/* ✅ Botones */
+.button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #155fc1;
+  transform: scale(1.05);
+}
+
+/* ✅ Contador */
+.span {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 📱 Modo responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .item {
+    flex-direction: column;       /* de fila a columna */
+    align-items: stretch;
+    width: 95%;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .productName {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .checkInput {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+  }
+
+  .span {
+    font-size: 18px;
+  }
+}

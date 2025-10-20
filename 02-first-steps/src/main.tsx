@@ -8,7 +8,7 @@ import { FirstStepsApp } from './FirsStepsApp'
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <FirstStepsApp />
-        {/* <MyAwesomeApp/> */}
+        {/* <MyAwesomeApp /> */}
         {/* <ItemCounter/> */}
     </StrictMode>
 

@@ -1,0 +1,109 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+    padding: 12px 12px;
+    margin: 12px 90px;
+    border-radius: 10px;
+    width: 20%;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(40, 20, 139, 0.08);
+    gap: 10px;
+  }
+  /* 💡 Estado activo */
+.item.active {
+    background-color: #e3f7e1;
+    border-color: #4caf50;
+  }
+  
+  .item.inactive {
+    background: linear-gradient(145deg, #fff5f3, #fbe9e7); /* degradado sutil */
+    border: 1px solid #ff8a65; /* color más suave y moderno */
+    border-radius: 12px; /* esquinas redondeadas */
+    opacity: 0.9; /* un poco más visible */
+    box-shadow: 0 2px 8px rgba(255, 112, 67, 0.2); /* sombra suave */
+    color: #d84315; /* tono cálido para el texto */
+    transform: scale(0.98); /* leve efecto visual de “desactivado” */
+    transition: all 0.3s ease; /* animaciones suaves */
+  }
+  
+  .item.inactive:hover {
+    opacity: 1;
+    transform: scale(1); /* efecto al pasar el mouse */
+    box-shadow: 0 4px 12px rgba(255, 112, 67, 0.3);
+  }
+  .spam {
+    margin-left: 8px;
+    color: #333;
+  }
+  
+  .productName {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 100;
+    color: #333;
+  }
+  
+  .checkContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #155fc1;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .checkInput {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1a73e8;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .checkInput:checked {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+  }
+  
+  .checkInput:checked::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .checkInput:hover {
+    border-color: #155fc1;
+  }
+  
+  .checkLabel {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .button {
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #155fc1;
+  }
