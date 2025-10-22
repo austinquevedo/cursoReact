@@ -23,9 +23,9 @@ export function ItemCounter({ name, quantity = 1 }: Props) {
     setCount(count - 1);
   }
 
-  const ceroContador = () => {
-    setCount(0);
-  }
+  // const ceroContador = () => {
+  //   setCount(0);
+  // }
 
   const itemClass = `${Styles.item} ${count < 1 ? Styles["ina-ctive"] : Styles.active}`;
 
@@ -36,7 +36,7 @@ export function ItemCounter({ name, quantity = 1 }: Props) {
 
   return (
     <section className={itemClass} onClick={handleClick}>
-      < input type="checkbox" className={Styles.checkInput} onClick={ceroContador} />
+
       <span className={Styles.productName}>{name}</span>
       <button className={Styles.button} onClick={handleAdd}>+1</button>
       <span className={Styles.span}>{count}</span>
