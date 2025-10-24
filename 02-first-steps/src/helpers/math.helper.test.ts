@@ -15,6 +15,7 @@ describe("Suma", () => {
     expect(resultadoAdd).toBe(a + b);
   });
   test("Suma de dos numeros negativos", () => {
+    // Esto es el comentartio del test de la suma de dos numeros negativos
     // 1 Arrange o preparacion
     const a = -4;
     const b = -2;
