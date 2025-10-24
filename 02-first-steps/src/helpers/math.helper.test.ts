@@ -15,6 +15,8 @@ describe("Suma", () => {
     // 3 Assert
     expect(resultadoAdd).toBe(a + b);
   });
+
+  //Este es un comentario de prueba para ver si se actualiza el archivo
   test("Suma de dos numeros negativos", () => {
     // Esto es el comentartio del test de la suma de dos numeros negativos
     // 1 Arrange o preparacion
