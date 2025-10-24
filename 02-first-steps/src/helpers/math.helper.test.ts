@@ -1,19 +1,43 @@
-import { expect, test } from "vitest";
+import { describe, expect, test } from "vitest";
 import { add, substract, divide, multiply, potencia } from "./math.helper";
 
-test("Suma de dos numeros", () => {
-  // 1 Arrange
-  const a = 4;
-  const b = 2;
+describe("Suma", () => {
+  test("Suma de dos numeros", () => {
+    // Esto es un comentario de prueba
+    // 1 Arrange o preparacion
+    const a = 4;
+    const b = 2;
 
-  // 2 Act
-  const resultadoAdd = add(a, b);
+    // 2 Act, accion o aplicar estimulos
+    const resultadoAdd = add(a, b);
 
-  // 3 Assert
-  expect(resultadoAdd).toBe(a + b);
+    // 3 Assert
+    expect(resultadoAdd).toBe(a + b);
+  });
+  test("Suma de dos numeros negativos", () => {
+    // 1 Arrange o preparacion
+    const a = -4;
+    const b = -2;
+
+    // 2 Act, accion o aplicar estimulos
+    const resultadoAdd = add(a, b);
+
+    // 3 Assert
+    expect(resultadoAdd).toBe(a + b);
+  });
+  test("Suma de 1 numero positivo y un numero negativo", () => {
+    // 1 Arrange o preparacion
+    const a = -4;
+    const b = 2;
+
+    // 2 Act, accion o aplicar estimulos
+    const resultadoAdd = add(a, b);
+
+    // 3 Assert
+    expect(resultadoAdd).toBe(a + b);
+  });
 });
-
-test("potencia de numeros", () => {
+test("potencia", () => {
   //arrange
   const base = 3;
   const exponente = 4;
@@ -23,25 +47,29 @@ test("potencia de numeros", () => {
   expect(resultadoPotencia).toBe(Math.pow(base, exponente));
 });
 
-test("Test para la multiplicacion", () => {
-  // Arrange
-  const a = 5;
-  const b = 3;
+describe("multiplicacion", () => {
+  test("Test para la multiplicacion", () => {
+    // Arrange
+    const a = 5;
+    const b = 3;
 
-  // Act
-  const resultadoMultiply = multiply(a, b);
+    // Act
+    const resultadoMultiply = multiply(a, b);
 
-  // Assert
-  expect(resultadoMultiply).toBe(a * b);
+    // Assert
+    expect(resultadoMultiply).toBe(a * b);
+  });
 });
 
-test("Resta de dos numeros", () => {
-  // Arrange
-  const a = 10;
-  const b = 4;
+describe("Resta", () => {
+  test("Resta de dos numeros", () => {
+    // Arrange
+    const a = 10;
+    const b = 4;
 
-  // Act
-  const resultadoSubstract = substract(a, b);
-  // Assert
-  expect(resultadoSubstract).toBe(a - b);
+    // Act
+    const resultadoSubstract = substract(a, b);
+    // Assert
+    expect(resultadoSubstract).toBe(a - b);
+  });
 });
