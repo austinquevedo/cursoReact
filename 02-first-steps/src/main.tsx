@@ -1,3 +1,4 @@
+// He agregado un comentario para ver si se actualiza el archivo
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { FirstStepsApp } from './FirsStepsApp'
