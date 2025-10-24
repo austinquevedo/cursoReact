@@ -1,9 +1,11 @@
+//Validacion  final de  la subida a Git
+
 import { describe, expect, test } from "vitest";
 import { add, substract, divide, multiply, potencia } from "./math.helper";
 
 describe("Suma", () => {
+  // Esto es un comentario de prueba
   test("Suma de dos numeros", () => {
-    // Esto es un comentario de prueba
     // 1 Arrange o preparacion
     // y ahora que hago
     const a = 4;
