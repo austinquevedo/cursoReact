@@ -5,6 +5,7 @@ describe("Suma", () => {
   test("Suma de dos numeros", () => {
     // Esto es un comentario de prueba
     // 1 Arrange o preparacion
+    // y ahora que hago
     const a = 4;
     const b = 2;
 
