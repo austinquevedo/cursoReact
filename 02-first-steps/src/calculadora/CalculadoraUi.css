@@ -1,0 +1,228 @@
+.calculadora-container {
+  max-width: 320px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.calculadora-titulo {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.calculadora-titulo::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.calculadora-display {
+  width: 100%;
+  padding: 20px;
+  font-size: 32px;
+  text-align: right;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  min-height: 60px;
+  box-sizing: border-box;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.calculadora-botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculadora-boton {
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  transition: background-color 0.2s;
+}
+
+.calculadora-boton-numero {
+  background-color: #ffffff;
+}
+
+.calculadora-boton-numero:hover {
+  background-color: #e9ecef;
+}
+
+.calculadora-boton-operador {
+  background-color: #007bff;
+  color: white;
+}
+
+.calculadora-boton-operador:hover {
+  background-color: #0056b3;
+}
+
+.calculadora-boton-igual {
+  background-color: #28a745;
+  color: white;
+  grid-row: span 2;
+}
+
+.calculadora-boton-igual:hover {
+  background-color: #218838;
+}
+
+.calculadora-boton-limpiar {
+  background-color: #3f23bd;
+  color: white;
+}
+
+.calculadora-boton-limpiar:hover {
+  background-color: #c82333;
+}
+
+.calculadora-boton-cero {
+  grid-column: span 2;
+}
+
+/* Media Queries para Responsive */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .calculadora-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .calculadora-titulo {
+    font-size: 1.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .calculadora-display {
+    padding: 15px;
+    font-size: 28px;
+    min-height: 50px;
+  }
+
+  .calculadora-boton {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Móviles pequeños y medianos */
+@media (max-width: 480px) {
+  .calculadora-container {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .calculadora-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .calculadora-titulo::after {
+    width: 50px;
+    height: 2px;
+    bottom: -8px;
+  }
+
+  .calculadora-display {
+    padding: 15px;
+    font-size: 24px;
+    min-height: 50px;
+    border-radius: 4px;
+  }
+
+  .calculadora-botones {
+    gap: 8px;
+  }
+
+  .calculadora-boton {
+    padding: 15px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 360px) {
+  .calculadora-container {
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .calculadora-titulo {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .calculadora-titulo::after {
+    width: 40px;
+    height: 2px;
+    bottom: -6px;
+  }
+
+  .calculadora-display {
+    padding: 12px;
+    font-size: 20px;
+    min-height: 45px;
+  }
+
+  .calculadora-botones {
+    gap: 6px;
+  }
+
+  .calculadora-boton {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 769px) {
+  .calculadora-container {
+    max-width: 400px;
+  }
+
+  .calculadora-display {
+    font-size: 36px;
+    padding: 25px;
+  }
+
+  .calculadora-boton {
+    padding: 25px;
+    font-size: 20px;
+  }
+}
+

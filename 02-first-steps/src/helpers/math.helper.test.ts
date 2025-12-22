@@ -5,9 +5,10 @@
 import { describe, expect, test } from "vitest";
 import { add, substract, divide, multiply, potencia } from "./math.helper";
 
-describe("Suma", () => {
-  // Esto es un comentario de prueba
-  test("Suma de dos numeros", () => {
+//Inicia el proceso de pruebas unitarias para la suma
+describe("Pruebas de la operacion Suma", () => {
+  // Suma de dos numeros positivos
+  test("Suma de dos numeros positivos", () => {
     // 1 Arrange o preparacion
     // y ahora que hago
     const a = 4;
@@ -20,7 +21,7 @@ describe("Suma", () => {
     expect(resultadoAdd).toBe(a + b);
   });
 
-  //Este es un comentario de prueba para ver si se actualiza el archivo
+  //Suma de dos numeros negativos
   test("Suma de dos numeros negativos", () => {
     // Esto es el comentartio del test de la suma de dos numeros negativos
     // 1 Arrange o preparacion
@@ -33,6 +34,7 @@ describe("Suma", () => {
     // 3 Assert
     expect(resultadoAdd).toBe(a + b);
   });
+  //Suma de un numero positivo y un numero negativo
   test("Suma de 1 numero positivo y un numero negativo", () => {
     // 1 Arrange o preparacion
     const a = -4;
@@ -45,14 +47,28 @@ describe("Suma", () => {
     expect(resultadoAdd).toBe(a + b);
   });
 });
-test("potencia", () => {
-  //arrange
-  const base = 3;
-  const exponente = 4;
-  //act
-  const resultadoPotencia = potencia(base, exponente);
-  //assert
-  expect(resultadoPotencia).toBe(Math.pow(base, exponente));
+
+//Inicia el proceso de pruebas unitarias para la potencia
+describe("Prueba de la operación de potencia", () => {
+  //Pruebas de potencia de dos numeros positivos
+  test("potencia", () => {
+    //arrange
+    const base = 3;
+    const exponente = 4;
+    //act
+    const resultadoPotencia = potencia(base, exponente);
+    //assert
+    expect(resultadoPotencia).toBe(Math.pow(base, exponente));
+  });
+  test("Potencia con exponente 0", () => {
+    //arrange
+    const base = 5;
+    const exponente = 0;
+    //act
+    const resultadoPotencia = potencia(base, exponente);
+    //assert
+    expect(resultadoPotencia).toBe(1);
+  });
 });
 
 describe("multiplicacion", () => {
@@ -69,7 +85,8 @@ describe("multiplicacion", () => {
   });
 });
 
-describe("Resta", () => {
+describe("Prueba de substract", () => {
+  //Rsta de dos numeros positivos
   test("Resta de dos numeros", () => {
     // Arrange
     const a = 10;
@@ -79,5 +96,41 @@ describe("Resta", () => {
     const resultadoSubstract = substract(a, b);
     // Assert
     expect(resultadoSubstract).toBe(a - b);
+  });
+  //Resta de un numero positivo y un numero negativo
+  test("Resta de un numero positivo y un numero negativo", () => {
+    // Arrange
+    const a = 7;
+    const b = -3;
+
+    // Act
+    const resultadoSubstract = substract(a, b);
+    // Assert
+    expect(resultadoSubstract).toBe(a - b);
+  });
+});
+
+describe("Prueba de divide", () => {
+  //División de dos numeros positivos
+  test("División de dos numeros positivos", () => {
+    // Arrange
+    const a = 10;
+    const b = 2;
+
+    // Act
+    const resultadoDivide = divide(a, b);
+    // Assert
+    expect(resultadoDivide).toBe(a / b);
+  });
+  //División de un numero positivo y un numero negativo
+  test("División de un numero positivo y un numero negativo", () => {
+    // Arrange
+    const a = 8;
+    const b = -2;
+
+    // Act
+    const resultadoDivide = divide(a, b);
+    // Assert
+    expect(resultadoDivide).toBe(a / b);
   });
 });

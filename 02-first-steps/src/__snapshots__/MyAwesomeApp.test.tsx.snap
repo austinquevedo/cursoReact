@@ -1,0 +1,52 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp Component > Should match snapshot 1`] = `
+<div>
+  <div>
+    <h1
+      data-testid="firstName"
+    >
+      Jose
+    </h1>
+    <p
+      class="mi-clase-favorita"
+    >
+      juego1, juego2, juego3
+    </p>
+    <h2>
+      Quevedo
+    </h2>
+    <ul>
+      <li>
+        0
+         
+        juego1
+      </li>
+      <li>
+        1
+         
+        juego2
+      </li>
+      <li>
+        2
+         
+        juego3
+      </li>
+    </ul>
+    <h1>
+      Calle Falsa
+       
+      123
+    </h1>
+    <h1>
+      Activo
+    </h1>
+    u
+    <p
+      style="background-color: rgb(237, 244, 255); color: rgb(34, 34, 34); padding: 12px 16px; border-radius: 20px; box-shadow: 0 2px 6px rgba(160, 43, 99, 0.29); font-family: Inter, Roboto, sans-serif; font-size: 15px; line-height: 1.6; max-width: 500px; margin: 10px auto;"
+    >
+      {"street":"Calle Falsa","number":123}
+    </p>
+  </div>
+</div>
+`;

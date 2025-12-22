@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 
 
-export function MyAwesomeApp(){
+export function MyAwesomeApp() {
     const firstName = 'Jose';
     const lastName = 'Quevedo';
     const favoriteGame = ['juego1', 'juego2', 'juego3'];
@@ -10,7 +10,7 @@ export function MyAwesomeApp(){
         street: 'Calle Falsa',
         number: 123
     };
-    const myStyle: CSSProperties ={
+    const myStyle: CSSProperties = {
         backgroundColor: '#edf4ff',
         color: '#222',
         padding: '12px 16px',
@@ -22,25 +22,28 @@ export function MyAwesomeApp(){
         maxWidth: '500px',
         margin: '10px auto',
         borderLeft: '4px solidrgb(9, 62, 102)', // azul estilo Microsoft
-      } ;
+    };
 
 
-    return(
-        <>
-            <h1>{firstName}</h1>
-            <h3>{lastName}</h3>
+    return (
+        <div>
+            <h1 data-testid='firstName'>{firstName}</h1>
+
+            <p className="mi-clase-favorita">{favoriteGame.join(', ')}</p>
+            <h2>{lastName}</h2>
             <ul>
                 {favoriteGame.map((game, index) => (
-                <li key={index}>{index} {game}</li>
+                    <li key={index}>{index} {game}</li>
                 ))}
             </ul>
-            <h1>{isActive ? 'Activo' : 'No Activo'}</h1>
+
             <h1>{adderess.street} {adderess.number}</h1>
+            <h1>{isActive ? 'Activo' : 'No Activo'}</h1>u
             <p style={myStyle}>
                 {JSON.stringify(adderess)}
             </p>
-        </>
+        </div>
 
     )
-    
+
 }

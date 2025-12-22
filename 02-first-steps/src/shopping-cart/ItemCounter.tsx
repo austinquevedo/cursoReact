@@ -19,7 +19,7 @@ export function ItemCounter({ name, quantity = 1 }: Props) {
   }
 
   const handelSustract = () => {
-    if (count < 1) return;
+    if (count == 1) return;
     setCount(count - 1);
   }
 
@@ -37,10 +37,13 @@ export function ItemCounter({ name, quantity = 1 }: Props) {
   return (
     <section className={itemClass} onClick={handleClick}>
 
-      <span className={Styles.productName}>{name}</span>
+      <span className={Styles.productName} style={{ color: count === 1 ? 'red' : 'black' }}>
+        {name}
+      </span>
+
       <button className={Styles.button} onClick={handleAdd}>+1</button>
       <span className={Styles.span}>{count}</span>
-      <button className={Styles.button} onClick={handelSustract} > -1</button >
+      <button className={Styles.button} onClick={handelSustract} >-1</button >
     </section >
   );
 }
