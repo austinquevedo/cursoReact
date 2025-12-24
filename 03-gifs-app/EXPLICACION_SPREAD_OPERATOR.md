@@ -265,3 +265,4 @@ El Spread Operator también funciona con:
 
 Es una característica muy poderosa de JavaScript ES6+ que hace el código más limpio y expresivo.
 
+
