@@ -49,4 +49,11 @@ export const mockGifs: Gif[] = [
     width: 350,
     height: 280,
   },
+  {
+    id: '7',
+    title: 'YES',
+    url: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDFrZGdhZTR5a2x6b3Y5bnVwdWJ1MnZmM2Z4dXViNHNmbXZ6bHo1cyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/MNmyTin5qt5LSXirxd/200.gif',
+    width: 350,
+    height: 280,
+  },
 ];

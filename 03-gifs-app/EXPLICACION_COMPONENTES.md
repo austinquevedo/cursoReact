@@ -316,3 +316,6 @@ Este patrón se llama:
 Es uno de los patrones más importantes en React y se usa constantemente en aplicaciones reales.
 
 
+
+
+
