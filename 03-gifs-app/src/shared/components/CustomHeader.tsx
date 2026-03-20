@@ -3,7 +3,10 @@ export interface CustomHeaderProps {
   description?: string;
 }
 
-export const CustomHeader = ({ title, description }: CustomHeaderProps) => {
+export const CustomHeader = ({
+  title,
+  description = 'Descubre y comparte el gif perfecto para tus momentos',
+}: CustomHeaderProps) => {
   return (
     <div className="content-center">
       <h1 className="montserrat-bold">{title}</h1>

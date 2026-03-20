@@ -15,6 +15,8 @@ export const GifsApp = () => {
     'heman',
   ]);
 
+  
+
   const handleSearch = (query: string) => {
     query = query.toLowerCase().trim();
     if (query.length === 0) return;

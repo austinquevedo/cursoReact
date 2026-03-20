@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import type { Gif } from '../../mock-data/gifs.mock';
 
-export interface Props {
+interface Props {
   gifs: Gif[];
 }
 
